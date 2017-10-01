@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>支付宝</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<script src="jquery.js"></script>
+<script>
+$(function(){
+	$(".background div").hide();
+	$(".background div:first").show();
+	
+	var n=0
+	function run(){
+		
+		if(n>1){
+			$(".background div:first").css({zIndex:1});
+			n=0}else{
+			$(".background div:first").css({zIndex:10});
+				n=n+1};
+				
+		$(".background div").eq(n).show();
+		$(".background div").eq(n).siblings().fadeOut()
+		}
+
+	setInterval(run,3000)
+	
+	
+	})
+
+
+</script>
+</head>
+
+<body>
+<!--页眉-->
+<div class="header">
+	<img class="header_img" src="images/logo.png">
+	<a href="" class="going">快速登录</a>
+    <p class="header_text">我已有支付宝账户</p> 
+    
+</div>
+<!--页尾-->
+<div class="footer">
+	<div class="footer_text">
+    	<a>蚂蚁金服集团</a>
+        <p>|</p>
+        <a>支付宝</a>
+        <p>|</p>
+        <a>余额宝</a>
+        <p>|</p>
+        <a>招财宝</a>
+        <p>|</p>
+        <a>蚂蚁微贷</a>
+        <p>|</p>
+        <a>网商银行</a>
+         <p>|</p>
+        <a>诚征英才</a>
+        <p>|</p>
+        <a>联系我们</a>
+        <p>|</p>
+        <a>International Business</a>
+        <a>&nbsp;支付宝版权所有 2004-2016 ICP证：沪B2-20150087</a>
+    </div>
+    <img src="images/footer.png">
+</div>
+
+<!--背景-->
+<div class="background">
+	<div class="bg_img"></div>
+    <div class="bg_img01"></div>
+    <div class="bg_img02"></div>
+</div>
+
+<!--中心内容-->
+<div class="conter_box">
+	<div class="conter">
+		<img src="images/text.png">
+		<div class="conter_text">
+    		<a>我是商家用户</a>
+    		<a>我是个人用户</a>
+    	</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置*/
+body{margin:0}
+a{text-decoration:none}
+p,h1,h2,ul,li{margin:0;padding:0;list-style:none}
+img{display:block;margin:0;border:none}
+/*页眉*/
+body{background-color:#FFF}
+body,html{width:100%;height:100%}
+.header{position:fixed;top:20px;left:0;overflow:hidden;width:100%;z-index:100}
+.header_img{width:70px;margin-left:10%;float:left}
+.going{float:right;color:#FFF;font-size:12px;margin-top:8px;margin-right:10%}
+.going:hover{color:#6CF}
+.header_text{float:right;font-size:12px;color:#aebfbf;margin-top:8px;margin-right:10px;}
+/*页尾*/
+.footer{background-image:url(images/footer_bg.png);height:70px;position:fixed;bottom:0;left:0;width:100%;z-index:90}
+.footer_text{width:90%;margin:auto;height:18px;font-size:11px;color:#666;font-family:"微软雅黑";margin-top:15px;overflow:hidden;text-align:center;}
+.footer_text p,a{display:inline-block}
+.footer_text p{margin:0 9px}
+.footer img{margin:auto;margin-top:7px;}
+/*背景*/
+.background{position:absolute;top:-70px;left:0;width:100%;height:100%;overflow:hidden;}
+.background .bg_img{background-image:url(images/bg.jpg);height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-size:cover;position:absolute;z-index:10}
+.background .bg_img01{background-image:url(images/bg1.jpg);height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-size:cover;position:absolute;z-index:9}
+.background .bg_img02{background-image:url(images/bg0.jpg);height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-size:cover;position:absolute;z-index:8}
+
+
+/*中心内容*/
+.conter_box{width:100%;position:relative;height:100%;overflow:hidden; z-index:90}
+.conter{width:682px;position:absolute;left:50%;top:20%;margin-left:-341px}
+.conter_text{overflow:hidden;width:380px;margin:auto;margin-top:60px;}
+.conter_text a{float:left;width:170px;line-height:50px;text-align:center;background-color:#0398e0; border-radius:10px;margin:0 10px;font-size:14px;color:#FFF;font-family:"微软雅黑";letter-spacing:1px; cursor:pointer;}
